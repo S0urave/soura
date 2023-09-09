@@ -10,8 +10,7 @@ The MGE parametrization is a valuable tool for accurately describing the surface
 
 Let ($x'$, $y'$, $z'$) be a coordinate system with the center at the galaxy nucleus, where the $z'$ axis points toward the observer. The projected surface brightness in MGE form can be expressed as:
 
-```latex
-\sum_{}^{}(R',\theta') = \sum_{j=1}^{N}\frac{L_j}{2\pi \sigma_j'^{2}}\exp{\Bigg[-\frac{1}{2\sigma_j'^{2}}\Bigg(x'_j{^2}+\frac{y'_j{^2}}{q'_j{^2}}\Bigg)\Bigg]}
+$\sum_{}^{}(R',\theta') = \sum_{j=1}^{N}\frac{L_j}{2\pi \sigma_j'^{2}}\exp{\Bigg[-\frac{1}{2\sigma_j'^{2}}\Bigg(x'_j{^2}+\frac{y'_j{^2}}{q'_j{^2}}\Bigg)\Bigg]}$
 Where:
 
 $N$ is the number of Gaussian components adopted.
