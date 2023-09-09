@@ -27,6 +27,12 @@ In the prolate axisymmetric case ($p = q$), the axial ratio $q$ is calculated as
 $q^2 = \frac{\sin^2i}{1/q'^2 - \cos^2i}$
 
 
+## References
+
+- Cappellari, M., & Emsellem, E. (2002). Parametric Recovery of Line-of-Sight Velocity Distributions from Absorption-Line Spectra of Galaxies Using a Library of Stellar Templates. *Monthly Notices of the Royal Astronomical Society*, 333(2), 400. [Link](https://doi.org/10.1046/j.1365-8711.2002.05412.x)
+- Emsellem, E., et al. (1994). Multi-component models for the analysis of spectral lines in composite stellar spectra. I. The problem of template mismatch and biases in decomposition of stellar spectra. *Monthly Notices of the Royal Astronomical Society*, 270(3), 605. [Link](https://doi.org/10.1093/mnras/270.3.605)
+Michele Cappellari. Efficient Multi-Gaussian Expansion of galaxies[Link](https://doi.org/10.48550/arXiv.astro-ph/0201430)
+
 
 
 
