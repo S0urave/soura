@@ -1,4 +1,35 @@
-##Surface Brightness Profiles 
+# Multi-Gaussian Expansion (MGE) for Galaxy Modeling
+
+The Multi-Gaussian Expansion (MGE) approach, introduced by Cappellari & Emsellem (2002) [1], is a powerful method for modeling the surface brightness of galaxies. It represents galaxy images as a sequence of 2D Gaussian functions, offering several advantages, including the ability to account for convolution effects (such as seeing or Point Spread Function) and deprojection (to obtain the intrinsic star luminosity density from recorded galaxy photometry) in a straightforward and efficient manner.
+
+## Introduction
+
+The MGE parametrization is a valuable tool for accurately describing the surface brightness of multicomponent objects with realistic details. It has been widely used for modeling galaxies, as demonstrated by Emsellem et al. (1994) [2].
+
+## MGE Formulation
+
+Let ($x'$, $y'$, $z'$) be a coordinate system with the center at the galaxy nucleus, where the $z'$ axis points toward the observer. The projected surface brightness in MGE form can be expressed as:
+
+```latex
+\sum_{}^{}(R',\theta') = \sum_{j=1}^{N}\frac{L_j}{2\pi \sigma_j'^{2}}\exp{\Bigg[-\frac{1}{2\sigma_j'^{2}}\Bigg(x'_j{^2}+\frac{y'_j{^2}}{q'_j{^2}}\Bigg)\Bigg]}
+Where:
+
+$N$ is the number of Gaussian components adopted.
+$L_j$ is the total luminosity of the j-th Gaussian.
+$0 \leq q_j ′ \leq 1$ is the observed axial ratio.
+$\sigma_j$ is the dispersion along the major axis.
+$\psi_j$ is the position angle (PA), measured counterclockwise from the $y'$ axis to the major axis of the Gaussian.
+In the oblate axisymmetric case ($p = 1$), when an inclination $i > 0$ (for $i = 0$, the deprojection is degenerate) is assumed for the galaxy ($i = 90$ corresponds to edge-on), the axial ratio $q$ can be calculated as:
+$q^2 = \frac{q'^2 - \cos^2i}{\sin^2i}$
+In the prolate axisymmetric case ($p = q$), the axial ratio $q$ is calculated as:
+$q^2 = \frac{\sin^2i}{1/q'^2 - \cos^2i}$
+
+
+
+
+
+
+ 
 ![AGC733302_dep](https://user-images.githubusercontent.com/100031717/208244447-47ada34e-e825-4eda-8d1f-38b91957e6c1.png)
 ![AGC733302](https://user-images.githubusercontent.com/100031717/208244449-aeef76f0-ce33-4ebb-965c-ea1f776ed750.png)
 ![AGC220901_dep](https://user-images.githubusercontent.com/100031717/208244450-28259876-899a-49d8-a482-70c2e129f8cb.png)
